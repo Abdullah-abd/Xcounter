@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Increment({setValue}){
+export default function Increment({setCount}){
     const handleIncrement=()=>{
-        setValue((prevValue)=>{
+        setCount((prevValue)=>{
             return prevValue+1;
         })
     }

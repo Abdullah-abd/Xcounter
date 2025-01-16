@@ -4,13 +4,13 @@ import Decrement from './components/Decrement';
 import Increment from './components/Increment';
 
 function App() {
-  const [value,setValue]= useState(0)
+  const [count,setCount]= useState(0)
   return (
     <div className="App">
       <h1>Counter App</h1>
-      <p>Count {value}</p>
-      <Decrement setValue={setValue}/>
-      <Increment setValue={setValue}/>
+      <p>Count {count}</p>
+      <Decrement setValue={setCount}/>
+      <Increment setValue={setCount}/>
     </div>
   );
 }

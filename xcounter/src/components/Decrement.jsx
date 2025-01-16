@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Decrement({setValue}){
+export default function Decrement({setCount}){
     const handleDecrement=()=>{
-        setValue((prevValue)=>{
+        setCount((prevValue)=>{
             return prevValue-1;
         })
     }
